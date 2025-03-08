@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Fashion Clothes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="products">
+        <div class="product" id="product-1">
+            <img src="https://via.placeholder.com/300x400?text=Fashion+Item+1" alt="Fashion Item 1">
+            <h3>Stylish Jacket</h3>
+            <p>$89.99</p>
+            <button onclick="addToCart('Stylish Jacket', 89.99)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product-2">
+            <img src="https://via.placeholder.com/300x400?text=Fashion+Item+2" alt="Fashion Item 2">
+            <h3>Casual T-shirt</h3>
+            <p>$29.99</p>
+            <button onclick="addToCart('Casual T-shirt', 29.99)">Add to Cart</button>
+        </div>
+
+        <div class="product" id="product-3">
+            <img src="https://via.placeholder.com/300x400?text=Fashion+Item+3" alt="Fashion Item 3">
+            <h3>Classic Jeans</h3>
+            <p>$49.99</p>
+            <button onclick="addToCart('Classic Jeans', 49.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: $0.00</p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
