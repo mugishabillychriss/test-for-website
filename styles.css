@@ -1,4 +1,29 @@
-:root {
+/* Add this CSS to your styles.css file */
+.welcome-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://via.placeholder.com/1920x1080?text=Clothes+Workshop') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.welcome-message {
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+root {
     --main-bg-color: #C0C0C0;
     --main-text-color: #333;
     --button-bg-color: #000000;
