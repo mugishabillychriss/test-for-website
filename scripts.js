@@ -1,3 +1,14 @@
+// Add this JavaScript to your scripts.js file
+
+document.addEventListener('DOMContentLoaded', function() {
+    const welcomeAnimation = document.getElementById('welcome-animation');
+    setTimeout(() => {
+        welcomeAnimation.style.opacity = '0';
+        setTimeout(() => {
+            welcomeAnimation.style.display = 'none';
+        }, 300); // Match this to the transition duration in CSS
+    }, 1300);
+});
 let cart = [];
 let total = 0;
 
